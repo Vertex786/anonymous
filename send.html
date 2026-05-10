@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send Anonymous Message</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html">🏠 Create Your Own Link</a>
+</div>
+
+<div class="card">
+
+  <h2>✉️ Anonymous Message</h2>
+
+  <p>Messages sent: <span id="msgCount">0</span></p>
+
+  <select id="template">
+    <option>আমি অনেকদিন ধরে এটা বলতে চাইছিলাম…</option>
+    <option>একটা গোপন কথা…</option>
+    <option>Hope you don’t mind…</option>
+  </select>
+
+  <textarea id="msg" placeholder="Write message"></textarea>
+
+  <button onclick="sendMessage()">Send</button>
+
+  <!-- 🔥 NEW BUTTONS -->
+  <button onclick="copyLink()">📋 Copy Link</button>
+  <button onclick="shareLink()">🔗 Share</button>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
