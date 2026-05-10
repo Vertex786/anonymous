@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Your Links</h2>
+
+  <input id="tg" placeholder="Telegram username">
+  <button onclick="createLink()">Create Link</button>
+
+  <h3>Stats</h3>
+  <p>Total Messages Sent: <span id="counter">0</span></p>
+
+  <ul id="list"></ul>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+const user = localStorage.getItem("user");
+if (!user) location.href = "login.html";
+</script>
+
+</body>
+</html>
